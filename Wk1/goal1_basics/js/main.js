@@ -147,7 +147,8 @@ var myStr = "6" / 2;
 console.log("Number / Strings: ", myStr);
 
     //order of operations: ( ), *, /, +, -
-
+var num = 4 + (6 * 5 - 10) / 5;
+console.log("Order of Operations: ", num);
 
     //modulo example
 
