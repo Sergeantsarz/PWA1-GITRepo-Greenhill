@@ -270,7 +270,11 @@ console.log('------ conditionals ----------');
          };
 */
 
-
+if (5 > 3){
+	//excecute code here. 
+	console.log("'5 > 3:' , True!");
+	
+};
 
 /*
     - a common mistake is to use the assignment operator  = instead of the ==
@@ -284,8 +288,21 @@ console.log('------ conditionals ----------');
 
     // == performs a loose check of two values
 
+if ("1" == 1){
+console.log("'1' == 1, True!");
+};
 
+if (1 == 1){
+console.log("1 == 1, True!");
+};
 
+if ("1" === 1){
+console.log("'1' === 1, False");
+};
+
+if ("1" !== 1){
+console.log("'1' !== 1, True!");
+};
 /* ==============================================================
     if - else statements (allows only for one option)
 
