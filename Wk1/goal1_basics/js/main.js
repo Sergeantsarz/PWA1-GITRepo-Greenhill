@@ -341,7 +341,16 @@ console.log("If - Else If: The 'IF' statement is false.");
 
 
     //nested conditional statement
+if ("a" === "a"){
 
+	if ("b" === "b"){
+		console.log("In Nested if-else / b === b: TRUE.");
+		//execute block of code if the matching "IF" statement returns true
+	};
+}else{
+	
+	console.log("Nested conditional / 1st IF returned FALSE.");
+};
 
 
 /* ==============================================================
