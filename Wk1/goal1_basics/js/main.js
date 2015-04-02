@@ -72,28 +72,28 @@ console.log('------ variables ----------');
 // string (definition, concatenation, escape character)
 console.log('------ strings ----------');
 
-var name = "James Bond"; 
-console.log(name); 
+//var name = "James Bond"; 
+//console.log(name); 
 
     //basic string
-var testString = "He's in PWA1"; 
-console.log("Example 1: ", testString);
+//var testString = "He's in PWA1"; 
+//console.log("Example 1: ", testString);
 
     //string w/ escape characters " \ "
-var testString2 = "I need some \"quotes\" to be here.";
-console.log("Example 2: ", testString2);
+//var testString2 = "I need some \"quotes\" to be here.";
+//console.log("Example 2: ", testString2);
 
-var testString3 = 'He\'s in PWA1'; 
-console.log("Example 3: ", testString3);
+//var testString3 = 'He\'s in PWA1'; 
+//console.log("Example 3: ", testString3);
 
     //string w/ escape characters and mixed single/double quotes
-var testString4 = 'He\'s in ' + '"PWA1"';
-console.log("Example 4: ", testString4);
+//var testString4 = 'He\'s in ' + '"PWA1"';
+//console.log("Example 4: ", testString4);
 
     //this example shows that all the "testString" vars above were overwritten
-var num = 3;
-var testString = 'he\'s in PWA1 ' + num;
-console.log("Example 5: ", testString);
+//var num = 3;
+//var testString = 'he\'s in PWA1 ' + num;
+//console.log("Example 5: ", testString);
 
 // numbers (definition, concatenation +, math, numbers & strings)
 console.log('------ numbers ----------');
@@ -125,8 +125,13 @@ myNum--
 console.log("myNum = ", myNum);
 
     //this decrements right before it is being used
+var num = 10;
+--num;
+console.log("-- counter: ", num); 
 
-    //this decrements after it is used
+    //this decrements after it is used  
+num--;
+console.log("counter --: ", num); 
 
     //comment out the above example
     //this decrements after it is being used as well
