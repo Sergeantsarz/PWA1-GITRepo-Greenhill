@@ -65,15 +65,19 @@ console.log('------ variables ----------');
 //var name, course = "PWA1", month; 
 //console.log('name: ', name + ' / course: ', course + ' / month: ', month );
     //example 4: declaring multiple variables at once w/ same value
-var a = b = c = d = 10;
-console.log("a: ", a + " / b: ", b + " / c: ", c + " / d: ", d);
+//var a = b = c = d = 10;
+//console.log("a: ", a + " / b: ", b + " / c: ", c + " / d: ", d);
 
 
 // string (definition, concatenation, escape character)
 console.log('------ strings ----------');
 
-    //basic string
+var name = "James Bond"; 
+console.log(name); 
 
+    //basic string
+var testString = "He's in PWA1"; 
+console.log("Example 1: ", testString);
 
     //string w/ escape characters " \ "
 
