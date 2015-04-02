@@ -102,6 +102,9 @@ console.log('------ numbers ----------');
 
 
     //basic math
+var counter = 10;
+console.log("Basic Math: " + counter + 1);
+console.log("Basic Math: " + counter); 
 
 
     //quick operations with "assignment operator" +=, -=, *=, /=, %=
