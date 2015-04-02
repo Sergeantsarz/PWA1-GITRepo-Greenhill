@@ -139,7 +139,8 @@ console.log("counter --: ", num--);
 console.log("counter --: ", num);
 
     //add a number to a string is always a string
-
+var myStr = "6" + 2;
+console.log("Number + Strings: ",  myStr);
 
     //other math operations will result in a number
 
