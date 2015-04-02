@@ -130,12 +130,13 @@ var num = 10;
 console.log("-- counter: ", num); 
 
     //this decrements after it is used  
-num--;
-console.log("counter --: ", num); 
+//num--;
+//console.log("counter --: ", num); 
 
     //comment out the above example
     //this decrements after it is being used as well
-
+console.log("counter --: ", num--);
+console.log("counter --: ", num);
 
     //add a number to a string is always a string
 
