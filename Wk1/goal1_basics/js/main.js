@@ -191,10 +191,12 @@ console.log("Index 3: ", myArr[3]);
  STUDENT ACTIVITY 1:
 
     1.  create an array with 4 numbers 10, 50, 100, 200
+
     2.  console.log the sum of all the numbers in an array
 
  ********************************************/
-
+var arrayOne = [10, 50, 100, 200];
+console.log("The total of the indexes in arrayOne is ", + arrayOne[0] + arrayOne[1] + arrayOne[2] + arrayOne[3]);
 
 
 /*******************************************
