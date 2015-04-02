@@ -213,7 +213,11 @@ console.log("The total of the indexes in arrayOne is ", + arrayOne[0] + arrayOne
     3. output array items using string concatenation
 
  ********************************************/
-
+var myArray = new Array();
+myArray[0] = "Baseball";
+myArray[1] = "Football";
+myArray[2] = "Basketball";
+console.log("Index 0 contains " + myArray[0] + ".", "Index 1 contains " + myArray[1] + ".", "Index 2 contains " + myArray[2] + ".");
 
  // conditionals: (definition, indexing, math, if, if-else, if-else if, ternary)
 console.log('------ conditionals ----------');
