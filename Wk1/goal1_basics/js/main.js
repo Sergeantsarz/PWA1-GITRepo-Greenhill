@@ -83,8 +83,12 @@ console.log("Example 1: ", testString);
 var testString2 = "I need some \"quotes\" to be here.";
 console.log("Example 2: ", testString2);
 
-    //string w/ escape characters and mixed single/double quotes
+var testStrin3 = 'He\'s in PWA1'; 
+console.log("Example 3: ", testString3);
 
+    //string w/ escape characters and mixed single/double quotes
+var testString4 = 'He\'s in ' + '"PWA1"';
+console.log("Example 4: ", testString4);
 
     //this example shows that all the "phase" vars above were overwritten
 
