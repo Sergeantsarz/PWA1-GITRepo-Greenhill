@@ -315,10 +315,29 @@ console.log("'1' !== 1, True!");
  ================================================================
  */
 
-
+if ("a" < "b"){
+//TRUE: run code
+console.log("A is less than B");
+}else{
+//FALSE: run code
+console.log("If-Else: The 'IF' statement is false.");
+};
 
     //if - else if - else (allows for multiple options)
-
+    
+if ("a" < "b"){
+//TRUE: run code
+console.log("A is less than B.");
+}else if ("a" < "c"){
+//FALSE: run code
+console.log("A is less than C.");
+}else if ("a" < "d"){
+//FALSE: run code
+console.log("A is less than D.");
+}else{
+//FALSE: run code
+console.log("If - Else If: The 'IF' statement is false.");
+};
 
 
     //nested conditional statement
