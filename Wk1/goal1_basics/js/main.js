@@ -115,6 +115,14 @@ num1 += num2;
 console.log("+=: ", num1);
 
     //increment or decrement numbers by 1 with ++ or --
+var myNum = 5;
+console.log("myNum = ", myNum);
+
+myNum++
+console.log("myNum = ", myNum);
+
+myNum--
+console.log("myNum = ", myNum);
 
     //this decrements right before it is being used
 
