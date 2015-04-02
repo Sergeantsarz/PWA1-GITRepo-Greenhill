@@ -138,12 +138,13 @@ console.log("-- counter: ", num);
 console.log("counter --: ", num--);
 console.log("counter --: ", num);
 
-    //add a number to a string is always a string
+    //adding a number to a string always equals a string
 var myStr = "6" + 2;
 console.log("Number + Strings: ",  myStr);
 
     //other math operations will result in a number
-
+var myStr = "6" / 2; 
+console.log("Number / Strings: ", myStr);
 
     //order of operations: ( ), *, /, +, -
 
