@@ -151,7 +151,9 @@ var num = 4 + (6 * 5 - 10) / 5;
 console.log("Order of Operations: ", num);
 
     //modulo example
-
+var num6 = 10;
+var num7 = 3;
+console.log("Remainder: ", num6 % num7);
 
 // arrays: (definition, indexing, getter/setter)
 console.log('------ arrays ----------');
