@@ -441,7 +441,32 @@ console.log("If-Else Weather: ", bobsMood);
     3.  console.log the results after each conditional
  ********************************************/
 
+var weather = "Cloudy"; 
+var waves = 10;
 
+if (weather === "Sunny"){
+	if(waves === 10) {
+		Mood = "Pumped!";
+	}else if((waves <= 9) && (waves >= 5)){
+	Mood = "Mellow."
+}else{
+	Mood = "Bummed";
+	}
+}else if(weather === 'Overcast'){
+	if((waves < 10) && (waves >= 7)){	
+		Mood = "Jacked-Up."
+	}else if((waves <= 6) && (waves >= 3)){
+		
+		Mood = "Totally bummed."
+	}else{
+	Mood = "Not happy."
+	}
+}else{
+	Mood = "Sad."
+};
+
+
+console.log("Bob's Mood: ", Mood); 
 
 
 /*
