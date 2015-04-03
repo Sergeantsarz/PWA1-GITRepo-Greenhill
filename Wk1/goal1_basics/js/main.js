@@ -507,7 +507,10 @@ console.log("I am " + ( smile === true ? "Happy" : "Sad") + "!");
     4.  console.log the results
  ********************************************/
 
-
+var temp = 60;
+var weather = "Sunny";
+var student1 = (weather === "Sunny" ? "Happy" : ((temp >= 80) ? "content": "Sad"));
+console.log("Nested Ternary Weather: ", student1);
 
 // Functions: (definition, whitespace, invocation, arguments, returns)
 console.log('------Functions ----------');
