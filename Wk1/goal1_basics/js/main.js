@@ -607,7 +607,7 @@ var value2 = 2;
 
 var myFn = function(var1, var2){
 	
-	console.log("Function Number: ", var1 + var2);
+console.log("Function Number: ", var1 + var2);
 };
 
 myFn(value1, value2);
@@ -624,6 +624,15 @@ myFn(value1, value2);
      6.  console.log the results
  ********************************************/
 
+var myctr = 1;
+
+var myCounter = function(newct){
+	myctr += newct;
+	console.log("Counter = ", myctr);
+};
+
+myCounter(5);
+myCounter(2);
 
 
 
@@ -637,6 +646,13 @@ myFn(value1, value2);
     - the called function should be assigned to a variable (i.e name - see below)
  ********************************************/
 
+
+var myFn = function(){
+	return "jamesBond";
+};
+
+var name = myFn();
+console.log("Name: ", myFn());
 
 
     // if a return gives back no value, it instead returns “undefined”
