@@ -370,16 +370,35 @@ if ("a" === "a"){
  */
 
     //AND logical operator
-
+if ((1 === 1) && ("hi" === "hi")){
+	console.log('&& Logical Operator: both sides == true.');
+	
+};
 
     //OR logical operator
-
+if ((1 === 1) || ("hi" === "no")){
+	console.log('|| Logical Operator: one side == true.');
+	
+};
 
     // ! NOT logical operator
+if (!(1 === 1) || ("hi" === "no")){
+	console.log('! NOT Logical Operator: left is true converted to NOT');
+	
+}else{
+	
+	console.log('! NOT Logical Operator: both sides == false.');
+};
 
 
     // all logical operators with order of operations
-
+if (5 < 2 || (1 === 1 && ! (2 == "2" || 5  < 2))){
+	console.log('Logical Operator: true.');
+	
+}else{
+	
+	console.log('Logical Operator: false.');
+};
 
 
 /*******************************************
