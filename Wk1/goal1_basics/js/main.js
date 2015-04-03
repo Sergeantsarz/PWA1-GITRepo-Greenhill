@@ -412,7 +412,16 @@ if (5 < 2 || (1 === 1 && ! (2 == "2" || 5  < 2))){
  GOAL
     1. learn if - else
  ********************************************/
+var weather = "Cloudy"; 
+if (weather == "Sunny"){
+	
+	bobsMood = "Happy";
+}else{
+	
+	bobsMood = "Sad";
+};
 
+console.log("If-Else Weather: ", bobsMood); 
 
 
 
