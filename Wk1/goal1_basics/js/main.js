@@ -697,3 +697,33 @@ console.log("Counter = ", cnt);
  5. console.log the Results
  ********************************************/
 
+var value3 = "Overcast"; 
+var value4 = 5;
+
+var moodFN = function(weather, waves){
+if (weather === "Sunny"){
+	if(waves === 10) {
+		Mood = "Pumped!";
+	}else if((waves <= 9) && (waves >= 5)){
+		Mood = "Mellow."
+	}else{
+		Mood = "Bummed";
+	}
+	
+}else if(weather === 'Overcast'){
+	if((waves < 10) && (waves >= 7)){	
+		Mood = "Jacked-Up."
+	}else if((waves <= 6) && (waves >= 3)){
+		Mood = "Totally bummed."
+	}else{
+	Mood = "Not happy."
+	}
+}else{
+	Mood = "Sad."
+	};
+	
+	return Mood;
+};
+
+var moodType = moodFN(value3, value4);
+console.log("Bob's Mood: ", moodType); 
