@@ -489,8 +489,12 @@ console.log("Bob's Mood: ", Mood);
     - : = false (perform the new statement after the :)
  */
 
+var weather = "Cloudy";
+var mood = (weather === "Sunny" ? "Happy" : "Sad");
+console.log("Mood: ", mood);
 
-
+var smile = true;
+console.log("I am " + ( smile === true ? "Happy" : "Sad") + "!");
 /*******************************************
  STUDENT ACTIVITY 5:
 
