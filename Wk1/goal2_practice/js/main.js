@@ -212,10 +212,10 @@ console.log(dec.toPrecision(4));
 
 //STUDENT ACTIVITY 4:
 //What method would you use to console.log the variable dec with two decimals.
+console.log(dec.toFixed(2));
 
-
-// Use toString() to console.log the type of num.
-
+// Use toString() to console.log the type of num. toString does whatever is to the right of it.
+console.log(typeof num.toString());
 
 
 
