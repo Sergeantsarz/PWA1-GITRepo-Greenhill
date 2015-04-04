@@ -1,6 +1,6 @@
 /*
-     Name:
-     Date:
+     Name:Sarah R. Greenhill
+     Date: 04/03/2015
      Class & Section:  PWA1-####
      Comments: "Goal 2: JavaScript Practice"
  */
@@ -158,20 +158,20 @@ var str2 = 'JavaScript loves me!';
 var abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 
 // Use charAt() to console.log the 'v' in str1.
-
+console.log(str1.charAt(4));
 
 // Use indexOf() to console.log the index of 'm' in str2.
-
+console.log(str2.indexOf("m"));
 
 // Use lastIndexOf() to console.log the last 'a' in str1.
-
+console.log(str1.lastIndexOf("a"));
 
 // Use length to console.log the length in str1.
-
+  console.log(str1.length);
 
 // Use split() to console.log an array of the ABC's using the abc variable.
 // EX: ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
-
+console.log(abc.split(""));
 
 //STUDENT ACTIVITY 1:
 // Use substr() to console.log 'JavaScript!' from str1.
@@ -423,7 +423,8 @@ console.log('------ While / Loop ----------');
 	FOR LOOP: for()
 		- a for loop is an increment-based loop, where the increment is 
 			part of the condition
-		- there are 3 statements inside the condition of a for loop: 
+		- there are 3 statements inside the condition of a for loop:
+
 			a.  first a counter variable is initialized
 			b.  second the “condition check”
 			c.  and third, increment the variable and perform the code 
