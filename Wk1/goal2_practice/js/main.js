@@ -175,21 +175,24 @@ console.log(abc.split(""));
 
 //STUDENT ACTIVITY 1:
 // Use substr() to console.log 'JavaScript!' from str1.
-
+console.log(str1.substr(7, 11));
 
 // Use concat() to console.log 'I love JavaScript ! JavaScript loves me!' with str1 and str2.
-
+console.log(str1.concat(str2));
 
 
 //STUDENT ACTIVITY 2:
 // Use substring() to console.log 'JavaScript' from str2.
-
+console.log(str2.substring(0, 10));
 
 //STUDENT ACTIVITY 3:
 // 1. Use toLowerCase() to console.log the str1 all in lowercase letters.
 // 2. Use toUpperCase() to console.log the str1 all in uppercase letters.
+console.log(str1.toLowerCase());
+console.log(str1.toUpperCase());
 
-
+//Use toString() for str1 to log the type of string it is
+console.log(typeof str1.toString());
 
 /*
 	===============================================
@@ -210,6 +213,7 @@ console.log('------ MORE Numbers ----------');
 
 
 // Use toString() to console.log the type of num.
+
 
 
 
