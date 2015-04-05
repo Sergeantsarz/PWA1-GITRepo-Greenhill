@@ -20,5 +20,24 @@
 	//Player Health
 	var playerOneHealth = 100;
 	var playerTwoHealth = 100;
+	
+	//What round we are in 
+	var round = 1;
+	
+	//Fight Function
+	function fight(){
+		//fight code
+		
+	};
+	
+	//Winner Check Function
+	function winnerCheck(){
+		//winner code
+		
+	};
+	
+	//Fight Function Call - program begins here 
+	fight();
+	
 })();
  
