@@ -22,7 +22,7 @@
 	var playerTwoHealth = 100;
 	
 	//What round we are in 
-	var round = 1;
+	var round = 0;
 	
 	//Fight Function - i for initialize
 	function fight(){
@@ -54,6 +54,7 @@
 				alert(playerOneName + ":" + playerOneHealth + " *ROUND " + round + " OVER* " + playerTwoName + ":" + playerTwoHealth);
 			}else{
 				alert(results);
+				break;
 			};
 		};
 		
