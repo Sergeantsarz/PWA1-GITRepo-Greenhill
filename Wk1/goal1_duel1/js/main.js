@@ -72,11 +72,11 @@
 			
 		}else if(playerOneHealth < 1){
 			
-			result = playerTwoName + "Wins!"
+			result = playerTwoName + " Wins!"
 			
 		}else if(playerTwoHealth < 1){
 			
-			result = playerOneName + "Wins!"
+			result = playerOneName + " Wins!"
 			
 		};
 		
