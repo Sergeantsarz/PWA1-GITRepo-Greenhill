@@ -239,7 +239,16 @@ console.log(typeof num.toString());
 */
 
 console.log('------ MORE Booleans ----------');
+//NaN or is Not A Number 
+var num = 9 * "k";
+console.log(num);
 
+if(num){
+console.log("It's true, the value is: ", num);
+}else{
+	console.log("It's false, the value is: ", num);
+	
+};
 
 	
 /*
