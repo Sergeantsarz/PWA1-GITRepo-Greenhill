@@ -5,4 +5,8 @@
      Comments: "Week 1 - Homework - ANALYZE Duel #1"
  */
  
+//self-excecuting function
+(function(){
+	console.log("Fight!");
+})();
  
