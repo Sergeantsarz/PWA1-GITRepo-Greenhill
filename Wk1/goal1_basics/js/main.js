@@ -190,8 +190,8 @@ console.log('------ arrays ----------');
     2.  console.log the sum of all the numbers in an array
 
  ********************************************/
-
-
+ 	var array1 = [10, 50, 100, 200];
+ 	console.log("The total of the indexes in array1 is ", + array1[0] + array1[1] + array1[2] + array1[3]);
 
 /*******************************************
 
@@ -207,7 +207,11 @@ console.log('------ arrays ----------');
     3. output array items using string concatenation
 
  ********************************************/
-
+ 	var myArray = new Array();
+ 	myArray[0] = "Baseball";
+ 	myArray[1] = "Football";
+ 	myArray[2] = "Basketball";
+	console.log("Index 0 contains: " + myArray[0] + ".", "Index 1 contains: " + myArray[1] + ".", "Index 2 contains: " + 		myArray[2] + ".");
 
  // conditionals: (definition, indexing, math, if, if-else, if-else if, ternary)
 console.log('------ conditionals ----------');
