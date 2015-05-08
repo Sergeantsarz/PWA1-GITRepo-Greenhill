@@ -640,7 +640,7 @@ console.log('------Functions ----------');
 
  	var myCounter = function(newCt){
 	var myCtr = 50;
-	myctr += newCt;
+	myCtr += newCt;
 	return myCtr;
 	};
 
