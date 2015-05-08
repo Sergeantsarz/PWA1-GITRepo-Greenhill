@@ -1,7 +1,7 @@
 /*
-     Name:
-     Date:
-     Class & Section:  PWA1-####
+     Name: Sarah R. Greenhill	
+     Date: 05/07/15
+     Class & Section:  PWA1
      Comments: "Goal 1: Review of WPF"
  */
 
@@ -52,16 +52,22 @@
 console.log('------ variables ----------');
 
     //example 1: variables defined properly
-
+		var name = "sarah";
+		var course = "PWA1";
+		var month = 3;
+		console.log('Name: ', name + ' / Course: ', course + ' / Month: ', month );
 
     //example 2: variables not defined will = "undefined"
-
+		var name, course, month; 
+		console.log('Name: ', name + ' / Course: ', course + ' / Month: ', month );
 
     //example 3: a mix of variables defined and not defined
-
+		var name, course = "PWA1", month; 
+		console.log('Name: ', name + ' / Course: ', course + ' / Month: ', month );
 
     //example 4: declaring multiple variables at once w/ same value
-
+		var a = b = c = d = 10;
+		console.log("A: ", a + " / B: ", b + " / C: ", c + " / D: ", d);
 
 
 // string (definition, concatenation, escape character)
@@ -416,9 +422,11 @@ console.log('------Functions ----------');
     - as an example:
         var identifier = function( var1, var2 ) { //code goes here };
 
-    - two important rules will apply to these new variables..  
+    - two important rules will apply to these new variables.. 
+
         1. if a variable of the same name already exists globally, the global will
-            be ignored, 
+            be ignored,
+
         2. the variables will only exist inside the function
 
  ******************
