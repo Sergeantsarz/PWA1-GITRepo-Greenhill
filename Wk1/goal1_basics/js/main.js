@@ -530,10 +530,16 @@ console.log('------Functions ----------');
 
      - type the below as an example
         functionName();
- *****************************
+ *****************************/
+ 	var mCtr = 1;
+ 	var myCounter = function(){
+	var testVar = 0;
+	myctr++;
+	console.log("Counter = ", myCtr);
+	};
 
-
-
+	myCounter();
+	myCounter();
 
  /*
     function literal: passing data into a function
@@ -571,9 +577,13 @@ console.log('------Functions ----------');
     - in the function - var1 and var2 are referred to as parameters of the function
     - items inside our function we call on these variables.. such as:
  */
-
-
-
+ 	var value1 = 1;
+ 	var value2 = 2;
+ 	var myFn = function(var1, var2){
+	console.log("Function Number: ", var1 + var2);
+	};
+	
+	myFn(value1, value2);
 
 /*******************************************
  STUDENT ACTIVITY 6:
@@ -586,9 +596,14 @@ console.log('------Functions ----------');
      5.  second time: pass a 2 into the funciton as an argument
      6.  console.log the results
  ********************************************/
+ 	var myCtr = 1;
+ 	var myCounter = function(newCtr){
+	myCtr += newCtr;
+	console.log("Counter = ", myCtr);
+	};
 
-
-
+	myCounter(5);
+	myCounter(2);
 
 /*******************************************
  function literal: returning values
@@ -599,14 +614,18 @@ console.log('------Functions ----------');
         type) back to the point of call (referred to as a method)
     - the called function should be assigned to a variable (i.e name - see below)
  ********************************************/
+ 	var myFn = function(){
+	return "jamesBond";
+	};
+
+	var name = myFn();
+	console.log("Name: ", myFn());
 
 
 
     // if a return gives back no value, it instead returns “undefined”
     // this technique is commonly used to end a function early, during execution
     // change the return statement to this 'return;'
-
-
 
 /*******************************************
  STUDENT ACTIVITY 7:
@@ -617,9 +636,19 @@ console.log('------Functions ----------');
             output the same info
     4.  console.log the results
  ********************************************/
+ 	var myCtr = 1;
 
+ 	var myCounter = function(newCt){
+	var myCtr = 50;
+	myctr += newCt;
+	return myCtr;
+	};
 
+	var cNt = myCounter(5);
+	console.log("Counter = ", cNt);
 
+	var cNt = myCounter(2);
+	console.log("Counter = ", cNt);
 
 /*******************************************
  STUDENT ACTIVITY 8:
@@ -630,4 +659,32 @@ console.log('------Functions ----------');
  4. return Mood
  5. console.log the Results
  ********************************************/
+ 	var value3 = "Overcast!"; 
+ 	var value4 = 5;
+ 	var moodFn = function(weather, waves){
+	if (weather === "Sunny!"){
+	if(waves === 10) {
+		Mood = "Pumped UP!";
+	}else if((waves <= 9) && (waves >= 5)){
+		Mood = "Mellow!"
+	}else{
+		Mood = "Bummed!";
+	}
+	}else if(weather === 'Overcast!'){
+	if((waves < 10) && (waves >= 7)){	
+		Mood = "Jacked-Up!"
+	}else if((waves <= 6) && (waves >= 3)){
+		Mood = "Totally bummed!"
+	}else{
+	Mood = "Not happy!"
+	}
+	}else{
+	Mood = "Sad!"
+	};
+	
+	return Mood;
+	};
+
+	var moodType = moodFn(value3, value4);
+	console.log("Bob's Mood: ", moodType); 
 
