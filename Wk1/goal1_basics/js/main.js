@@ -176,7 +176,10 @@ console.log('------ arrays ----------');
  */
 
     //arrays can hold any data type
-
+		console.log("Index 0: ", myArr[0]);
+		console.log("Index 1: ", myArr[1]);
+		console.log("Index 2: ", myArr[2]);
+		console.log("Index 3: ", myArr[3]);
 
 
  /*******************************************
