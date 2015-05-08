@@ -534,7 +534,7 @@ console.log('------Functions ----------');
  	var mCtr = 1;
  	var myCounter = function(){
 	var testVar = 0;
-	myctr++;
+	myCtr++;
 	console.log("Counter = ", myCtr);
 	};
 
