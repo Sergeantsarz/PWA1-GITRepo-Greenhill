@@ -211,7 +211,7 @@ console.log('------ arrays ----------');
  	myArray[0] = "Baseball";
  	myArray[1] = "Football";
  	myArray[2] = "Basketball";
-	console.log("Index 0 contains: " + myArray[0] + ".", "Index 1 contains: " + myArray[1] + ".", "Index 2 contains: " + 		myArray[2] + ".");
+	console.log("Index 0 contains: " + myArray[0] + ".", "Index 1 contains: " + myArray[1] + ".", "Index 2 contains: " + 	myArray[2] + ".");
 
  // conditionals: (definition, indexing, math, if, if-else, if-else if, ternary)
 console.log('------ conditionals ----------');
@@ -263,7 +263,11 @@ console.log('------ conditionals ----------');
             //block of code or ‘actions’
          };
 */
-
+	if (5 > 3){
+	//excecute code here
+	console.log("'5 > 3:' , True!");
+	
+	};
 
 
 /*
@@ -277,8 +281,21 @@ console.log('------ conditionals ----------');
 */
 
     // == performs a loose check of two values
+		if ("1" == 1){
+		console.log("'1' == 1, True!");
+		};
 
+		if (1 == 1){
+		console.log("1 == 1, True!");
+		};
 
+		if ("1" === 1){
+		console.log("'1' === 1, False!");
+		};
+
+		if ("1" !== 1){
+		console.log("'1' !== 1, True!");
+		};
 
 /* ==============================================================
     if - else statements (allows only for one option)
@@ -291,16 +308,38 @@ console.log('------ conditionals ----------');
 
  ================================================================
  */
-
-
+ 	if ("a" < "b"){
+	//TRUE: run code
+	console.log("A is less than B");
+	}else{
+	//FALSE: run code
+	console.log("If-Else: The 'IF' statement is false.");
+	};
 
     //if - else if - else (allows for multiple options)
-
-
+		if ("a" < "b"){
+		//TRUE: run code
+		console.log("A is less than B.");
+		}else if ("a" < "c"){
+		//FALSE: run code
+		console.log("A is less than C.");
+		}else if ("a" < "d"){
+		//FALSE: run code
+		console.log("A is less than D.");
+		}else{
+		//FALSE: run code
+		console.log("If - Else If: The 'IF' statement is false.");
+		};
 
     //nested conditional statement
-
-
+		if ("a" === "a"){
+			if ("b" === "b"){
+			console.log("In Nested if-else / b === b: TRUE.");
+			//execute block of code if the matching "IF" statement returns true
+			};
+		}else{
+		console.log("Nested conditional / 1st IF returned FALSE.");
+		};
 
 /* ==============================================================
  LOGICAL operators
@@ -319,16 +358,28 @@ console.log('------ conditionals ----------');
  */
 
     //AND logical operator
-
+		if ((1 === 1) && ("hi" === "hi")){
+		console.log('&& Logical Operator: both sides == true.');
+		};
 
     //OR logical operator
-
+		if ((1 === 1) || ("hi" === "no")){
+		console.log('|| Logical Operator: one side == true.');
+		};
 
     // ! NOT logical operator
-
+		if (!(1 === 1) || ("hi" === "no")){
+		console.log('! NOT Logical Operator: left is true converted to NOT');
+		}else{
+		console.log('! NOT Logical Operator: both sides == false.');
+		};
 
     // all logical operators with order of operations
-
+		if (5 < 2 || (1 === 1 && ! (2 == "2" || 5  < 2))){
+		console.log('Logical Operator: true.');
+		}else{
+		console.log('Logical Operator: false.');
+		};
 
 
 /*******************************************
