@@ -531,7 +531,7 @@ console.log('------Functions ----------');
      - type the below as an example
         functionName();
  *****************************/
- 	var mCtr = 1;
+ 	var myCtr = 1;
  	var myCounter = function(){
 	var testVar = 0;
 	myCtr++;
