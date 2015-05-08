@@ -393,9 +393,14 @@ console.log('------ conditionals ----------');
  GOAL
     1. learn if - else
  ********************************************/
+ 	var weather = "Cloudy!"; 
+ 	if (weather == "Sunny!"){
+	bobsMood = "Happy!";
+	}else{
+	bobsMood = "Sad!";
+	};
 
-
-
+	console.log("If-Else Weather: ", bobsMood);
 
 /*******************************************
  STUDENT ACTIVITY 4:
@@ -412,7 +417,30 @@ console.log('------ conditionals ----------');
         - else bobsMood = "sad"
     3.  console.log the results after each conditional
  ********************************************/
+ 	var weather = "Cloudy!"; 
+ 	var waves = 10;
 
+ 	if (weather === "Sunny!"){
+		if(waves === 10) {
+		Mood = "Pumped!";
+		}else if((waves <= 9) && (waves >= 5)){
+		Mood = "Mellow."
+		}else{
+		Mood = "Bummed!";
+			}
+		}else if(weather === 'Overcast!'){
+	if((waves < 10) && (waves >= 7)){	
+		Mood = "Jacked-Up!"
+	}else if((waves <= 6) && (waves >= 3)){
+		
+		Mood = "Totally bummed!"
+	}else{
+		Mood = "Not happy!"
+	}
+	}else{
+	Mood = "Sad!"
+	};
+	console.log("Bob's Mood: ", Mood);
 
 
 
@@ -435,7 +463,12 @@ console.log('------ conditionals ----------');
     - ? = perform the next statement if true
     - : = false (perform the new statement after the :)
  */
+ 	var weather = "Cloudy";
+ 	var mood = (weather === "Sunny" ? "Happy" : "Sad");
+ 	console.log("Mood: ", mood);
 
+ 	var smile = true;
+ 	console.log("I am " + ( smile === true ? "Happy" : "Sad") + "!");
 
 
 /*******************************************
@@ -448,7 +481,11 @@ console.log('------ conditionals ----------');
         - if false and temp >= 80, student1 = 'content'
         - else student1 = 'sad'
     4.  console.log the results
- ********************************************/
+********************************************/
+	var temp = 60;
+	var weather = "Sunny!";
+	var student2 = (weather === "Sunny!" ? "Happy!" : ((temp >= 80) ? "Content.": "Sad."));
+	console.log("Nested Ternary Weather: ", student2);
 
 
 
