@@ -9,37 +9,37 @@
 (function(){
 	console.log("Fight!");
 	
-	//Player Names
+	//These are the player's names
 	var playerOneName = "Spiderman";
 	var playerTwoName = "Batman";
 	
-	//Player Damage
+	//Damage done by each player
 	var player1Damage = 20;
 	var player2Damage = 20;
 	
-	//Player Health
+	//Each player's health
 	var playerOneHealth = 100;
 	var playerTwoHealth = 100;
 	
-	//What round we are in 
+	//This variable shows what round we're in
 	var round = 0;
 	
-	//Fight Function - i for initialize
+	//This is the fight function, I stands for Initialize (as in initialize the function)
 	function fight(){
-		//fight code
+		//Inside the fight function
 		console.log("Fight Function Starts Here!");
 		
 		alert(playerOneName + ":" + playerOneHealth + " *START* " + playerTwoName + ":" + playerTwoHealth);
 		
 		for (var i=0; i<10; i++){
-			//random formula is: Math.floor(Math.random() * (max - min) + min);
+			//Formula for random generated number: Math.floor(Math.random() * (max - min) + min);
 			var minDamage1 = player1Damage * .5;
 			var minDamage2 = player2Damage * .5;
 			
 			var f1 = Math.floor(Math.random() * (player1Damage - minDamage1) + minDamage1);
 			var f2 = Math.floor(Math.random() * (player2Damage - minDamage2) + minDamage2);
 			
-			//Damage is inflicted
+			//This is where damage is done by each player
 			playerOneHealth -= f1;
 			playerTwoHealth -= f2;
 			
@@ -60,10 +60,10 @@
 		
 	};
 	
-	//Winner Check Function
+	//This function checks who the winner is 
 	function winnerCheck(){
 	console.log("Inside winnerCheck Function");
-		//winner code
+		//Inside the winner check function
 		var result = "No Winner!";
 		
 		if(playerOneHealth < 1 && playerTwoHealth < 1){
@@ -83,7 +83,7 @@
 		return result;
 	};
 	
-	//Fight Function Call - program begins here 
+	//This calls the fight function into action - everything starts here 
 	console.log("Program Starts Here!");
 	fight();
 	
