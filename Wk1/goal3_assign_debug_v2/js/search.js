@@ -23,7 +23,7 @@
 		// Check search length, must have 3 characters
 		//If the query to the search engine is less than 3, it will alert the user that what they entered is too short and to try again with a longer entry
 		if(query.length < 3){
-		//ending quotes were missing, added back in
+		//missing end quotes, added them in 
 			alert("Your search query is too small, try again.");
 			
 			// (DO NOT FIX THE LINE DIRECTLY BELOW)
@@ -47,17 +47,18 @@
 		for(var i=0, j=db.length; i<j; i++){
 		
 			// each db[i] is a single video item, each title ends with a pipe "|"
-			// save a lowercase variable of the video title
 			var dbTitleEnd = db[i].indexOf('|');
+			// save a lowercase variable of the video title by switching anything the user enters and sending it to all lower case
 			var dbitem = db[i].tolowercase().substring(0, dbTitleEnd);
 			
 			// loop through the user's search query words
-			// save a lowercase variable of the search keyword
 			for(var ii=0, jj=queryArray.length; ii<jj; ii++){
+			// save a lowercase variable of the search keyword
 				var qitem = queryArray[ii].tolowercase();
 				
 				// is the keyword anywhere in the video title?
 				// If a match is found, push full db[i] into results array
+				//The results array will now contain anything that querys a result based upon what the user has entered into the search 
 				var compare = dbitem.indexOf(qitem);
 				if(compare !== -1){
 					results.push(db[i]);
@@ -68,6 +69,7 @@
 		results.sort();
 		
 		// Check that matches were found, and run output functions
+		//if the results =  0 then let the user know there was no match by initalizing the noMatch function, else show the user what matched their query and output those matches to the results variable 
 		if(results.length = 0){
 			noMatch();
 		}else{
@@ -76,6 +78,7 @@
 	};
 	
 	// Put "No Results" message into page (DO NOT FIX THE HTML VAR NOR THE innerHTML)
+	//noMatch function is defined here. If no matches are found in the database, display these HTML properties to the user
 	var noMatch = function(){
 		var html = ''+
 			'<p>No Results found.</p>'+
