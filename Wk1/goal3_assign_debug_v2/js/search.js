@@ -8,12 +8,14 @@
 	;
 	
 	// Validates search query
+	//the word validate is not spelled correctly here 
 	var validqte == function(query){
 		
 		// Trim whitespace from start and end of search query
 		while(query.charAt(0) = " "){
 			query = query.substring(1, query.length);
 		};
+		//beginning parenthesis is missing 
 		while(query.charAt(query.length-1) === ""){
 			query = query.substring(0, query.length-1);
 		;
@@ -21,7 +23,8 @@
 		// Check search length, must have 3 characters
 		//If the query to the search engine is less than 3, it will alert the user that what they entered is too short and to try again with a longer entry
 		if(query.length < 3){
-			alert("Your search query is too small, try again.);
+		//ending quotes were missing, added back in
+			alert("Your search query is too small, try again.");
 			
 			// (DO NOT FIX THE LINE DIRECTLY BELOW)
 			searchInput.focus();
