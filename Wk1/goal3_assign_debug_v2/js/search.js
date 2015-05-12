@@ -18,12 +18,14 @@
 		//beginning parenthesis is missing 
 		while(query.charAt(query.length-1) === ""){
 			query = query.substring(0, query.length-1);
+		//extra semi colon?
 		;
 		
 		// Check search length, must have 3 characters
 		//If the query to the search engine is less than 3, it will alert the user that what they entered is too short and to try again with a longer entry
 		if(query.length < 3){
 		//missing end quotes, added them in 
+		//alert the user that their search was not enough characters 
 			alert("Your search query is too small, try again.");
 			
 			// (DO NOT FIX THE LINE DIRECTLY BELOW)
