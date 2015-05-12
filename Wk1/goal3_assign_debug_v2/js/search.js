@@ -14,7 +14,7 @@
 		// Trim whitespace from start and end of search query
 		while(query.charAt(0) = " "){
 			query = query.substring(1, query.length);
-		};
+		}; 
 		//beginning parenthesis is missing 
 		while(query.charAt(query.length-1) === ""){
 			query = query.substring(0, query.length-1);
@@ -30,6 +30,7 @@
 			
 			// (DO NOT FIX THE LINE DIRECTLY BELOW)
 			searchInput.focus();
+			//return the results of the search 
 			return;
 		};
 		//if the length of the query is sufficient, then search for the term entered by the user 
