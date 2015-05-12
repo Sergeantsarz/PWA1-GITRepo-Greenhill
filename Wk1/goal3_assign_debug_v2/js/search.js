@@ -117,6 +117,7 @@
 	// THE LINE DIRECTLY BELOW IS CORRECT
 	document.forms[0].onsubmit = function(){
 		var query = searchInput.value;
+		//validate is spelled incorrectly 
 		validqte(query);
 
         // return false is needed for most events - this will be reviewed in upcoming course material
