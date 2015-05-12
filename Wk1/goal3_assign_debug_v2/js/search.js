@@ -4,8 +4,8 @@
 	// Variable initialization (DO NOT FIX ANY OF THE BELOW VAR's)
 	var resultsDIV = document.getElementById("results"),
 		searchInput = document.forms[0].search,
-		currentSearch = ''
-	;
+		//possibly got something wrong on line 8? Consolidated semicolon up a line
+		currentSearch = '';
 	
 	// Validates search query
 	//the word validate is not spelled correctly here 
