@@ -19,6 +19,7 @@
 		;
 		
 		// Check search length, must have 3 characters
+		//If the query to the search engine is less than 3, it will alert the user that what they entered is too short and to try again with a longer entry
 		if(query.length < 3){
 			alert("Your search query is too small, try again.);
 			
@@ -26,11 +27,11 @@
 			searchInput.focus();
 			return;
 		};
-		
+		//if the length of the query is sufficient, then search for the term entered by the user 
 		search(query);
 	};
 	
-	// Finds search matches
+	// Finds matches when the user searches for something
 	var search = function(query)
 		
 		// split the user's search query string into an array
