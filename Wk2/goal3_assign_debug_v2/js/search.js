@@ -15,8 +15,8 @@
 		currentSearch = '';
 	
 	// Validates search query
-	//the word validate is not spelled correctly here 
-	var validqte == function(query){
+	//There are two equal signs here when there should be one
+	var validqte = function(query){
 		
 		// Trim whitespace from start and end of search query
 		while(query.charAt(0) = " "){
@@ -25,8 +25,9 @@
 		//beginning parenthesis is missing 
 		while(query.charAt(query.length-1) === ""){
 			query = query.substring(0, query.length-1);
-		//extra semi colon?
-		;
+		//No closing bracket for while loop here 
+		};
+	}; //Missing close bracket for validqte function
 		
 		// Check search length, must have 3 characters
 		//If the query to the search engine is less than 3, it will alert the user that what they entered is too short and to try again with a longer entry
