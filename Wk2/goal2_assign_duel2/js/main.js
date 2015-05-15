@@ -48,10 +48,10 @@
 			}else{
 				alert(results);
 				break;
-			};
-		};
+			}; //End of the for loop
+		}; //End of the if-else statement
 		
-	};
+	}; //End of the fight function
 	
 	//This function checks who the winner is 
 	function winnerCheck(){
@@ -71,10 +71,10 @@
 			
 			result = playerOneArr[0] + " Wins!"
 			
-		};
+		}; //Ends the if-else for winnerCheck 
 		
-		return result;
-	};
+		return result; //Returns the results of the winner check
+	}; //End of the winnerCheck Function
 	
 	//This calls the fight function into action - everything starts here 
 	console.log("Program Starts Here!");
