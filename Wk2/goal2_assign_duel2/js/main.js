@@ -1,27 +1,19 @@
 /*
      Name: Sarah Greenhill
-     Date: 05/09/15
+     Date: 05/15/15
      Class & Section: PWA1
-     Comments: Week 1 Homework 1 Duel 
+     Comments: Week 2 Homework Duel2 
  */
  
 //This is a self-excecuting function
 (function(){
 	console.log("Fight!");
 	
-	//These are the player's names
-	var playerOneName = "Spiderman";
-	var playerTwoName = "Batman";
+	//These are the player's names, damage, and health contained inside an array 
+	var playerOneArr = ["Spiderman", 20, 100];
+	var playerTwoArr = ["Batman", 20, 100];
 	
-	//Damage done by each player
-	var player1Damage = 20;
-	var player2Damage = 20;
-	
-	//Each player's health
-	var playerOneHealth = 100;
-	var playerTwoHealth = 100;
-	
-	//This variable shows what round we're in
+		//This variable shows what round we're in
 	var round = 0;
 	
 	//This is the fight function, I stands for Initialize (as in initialize the function)
@@ -29,21 +21,21 @@
 		//Inside the fight function
 		console.log("Fight Function Starts Here!");
 		//This displays an alert to the user showing the player's names, current health, and that the round has started
-		alert(playerOneName + ":" + playerOneHealth + " *START* " + playerTwoName + ":" + playerTwoHealth);
+		alert(playerOneArr[0] + ": " + playerOneArr[2] + " *START* " + playerTwoArr[0] + ": " + playerTwoArr[2]);
 		
 		for (var i=0; i<10; i++){
 			//Formula for random generated number: Math.floor(Math.random() * (max - min) + min); These are variables set up to contain the math done to determine the random amount of damage that each player does
-			var minDamage1 = player1Damage * .5; //This is the minimum amount of damage player 1 dishes out
-			var minDamage2 = player2Damage * .5; //This is the minimum amount of damage player 2 dishes out 
+			var minDamage1 = playerOneArr[1] * .5; //This is the minimum amount of damage player 1 dishes out
+			var minDamage2 = playerTwoArr[1] * .5; //This is the minimum amount of damage player 2 dishes out 
 			
-			var f1 = Math.floor(Math.random() * (player1Damage - minDamage1) + minDamage1); //Random math formula calculating dmg for player 1 
-			var f2 = Math.floor(Math.random() * (player2Damage - minDamage2) + minDamage2); //Random math formula calculating dmg for player 2
+			var f1 = Math.floor(Math.random() * (playerOneArr[1] - minDamage1) + minDamage1); //Random math formula calculating dmg for player 1 
+			var f2 = Math.floor(Math.random() * (playerTwoArr[1] - minDamage2) + minDamage2); //Random math formula calculating dmg for player 2
 			
 			//This is where damage is done by each player
-			playerOneHealth -= f1;
-			playerTwoHealth -= f2;
+			playerOneArr[2] -= f1;
+			playerTwoArr[2] -= f2;
 			//This logs to the console the current health of each player
-			console.log(playerOneName+":"+playerOneHealth+playerTwoName+":"+playerTwoHealth);
+			console.log(playerOneArr[0] + ": " + playerOneArr[2] + playerTwoArr[0] + ": " + playerTwoArr[2]);
 			
 			var results = winnerCheck(); //This calls the winnerCheck function where it will check to see if a player has bested the other, or if both have died 
 			console.log(results); //Logs the variable 'results' to the console showing who's been killed and/or what their health is 
@@ -52,7 +44,7 @@
 			if(results === "No Winner!"){
 				
 				round++;
-				alert(playerOneName + ":" + playerOneHealth + " *ROUND " + round + " OVER* " + playerTwoName + ":" + playerTwoHealth);
+				alert(playerOneArr[0] + ": " + playerOneArr[2] + " *ROUND " + round + " OVER* " + playerTwoArr[0] + ": " + playerTwoArr[2]);
 			}else{
 				alert(results);
 				break;
@@ -67,17 +59,17 @@
 		//Inside the winner check function
 		var result = "No Winner!"; //Default state of 'result' variable is that ther is no winner
 		//If either player's health has gone lower than 1, result variable will return that both players have died to the result variable, which will alert the user
-		if(playerOneHealth < 1 && playerTwoHealth < 1){
+		if(playerOneArr[2] < 1 && playerTwoArr[2] < 1){
 			
 			result = "You Both Die.";
 			
-		}else if(playerOneHealth < 1){
+		}else if(playerOneArr[2] < 1){
 			
-			result = playerTwoName + " Wins!"
+			result = playerTwoArr[0] + " Wins!"
 			
-		}else if(playerTwoHealth < 1){
+		}else if(playerTwoArr[2] < 1){
 			
-			result = playerOneName + " Wins!"
+			result = playerOneArr[0] + " Wins!"
 			
 		};
 		
