@@ -7,56 +7,58 @@
 
 // Create privatized scope using a self-executing function
 (function(){
-	
+	console.log("Inside initial function");
 	// Variable initialization (DO NOT FIX ANY OF THE BELOW VAR's)
 	var resultsDIV = document.getElementById("results"),
 		searchInput = document.forms[0].search,
-		//possibly got something wrong on line 8? Consolidated semicolon up a line
 		currentSearch = '';
 	
 	// Validates search query
 	//There are two equal signs here when there should be one
 	var validqte = function(query){
-		
+	console.log("3");
 		// Trim whitespace from start and end of search query
-		while(validqte.charAt(0) = " "){
-			query = validqte.substring(1, validqte.length);
+		while(validqte.charAt(0) === " "){
+			validqte = validqte.substring(1, validqte.length);
 		}; 
 		//beginning parenthesis is missing 
-		while(validqte.charAt(validqte.length-1) === ""){
-			query = validqte.substring(0, validqte.length-1);
+		while(validqte.charAt(validqte.length) === ""){
+			validqte = validqte.substring(1, validqte.length-1);
 		//No closing bracket for while loop here 
 		};
+
 	}; //Missing close bracket for validqte function
 		
 		// Check search length, must have 3 characters
 		//If the query to the search engine is less than 3, it will alert the user that what they entered is too short and to try again with a longer entry
 		if(validqte.length < 3){
+		console.log("4");
 		//missing end quotes, added them in 
 		//alert the user that their search was not enough characters 
 			alert("Your search query is too small, try again.");
-			
+			 
 			// (DO NOT FIX THE LINE DIRECTLY BELOW)
 			searchInput.focus();
 			//return the results of the search 
 			return;
 		};
+		console.log("5");
 		//if the length of the query is sufficient, then search for the term entered by the user 
 		search(query);
-		//Random curly brace and semi colon that shouldn't have been here
+	
 	
 		// Finds matches when the user searches for something
 		var search = function(query){
-		
+		console.log("6");
 		// split the user's search query string into an array
-		var queryArray = query.join(" ");
+		var queryArray = search.join(" ");
 		
 		// array to store matched results from database.js
 		var results = [];
 
 		// loop through each index of db array
 		for(var i=0, j=db.length; i<j; i++){
-		
+		console.log("7");
 			// each db[i] is a single video item, each title ends with a pipe "|"
 			var dbTitleEnd = db[i].indexOf('|');
 			// save a lowercase variable of the video title by switching anything the user enters and sending it to all lower case
