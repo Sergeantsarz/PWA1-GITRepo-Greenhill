@@ -43,10 +43,10 @@
 		};
 		//if the length of the query is sufficient, then search for the term entered by the user 
 		search(query);
-	};
+		//Random curly brace and semi colon that shouldn't have been here
 	
-	// Finds matches when the user searches for something
-	var search = function(query)
+		// Finds matches when the user searches for something
+		var search = function(query){
 		
 		// split the user's search query string into an array
 		var queryArray = query.join(" ");
@@ -73,9 +73,9 @@
 				var compare = dbitem.indexOf(qitem);
 				if(compare !== -1){
 					results.push(db[i]);
-				};
-			;
-		;
+				}; //Missing end curly brace for search function
+			}; //Missing end curly brace for db array loop
+		}; //Missing end curly brace for db for loop
 		
 		results.sort();
 		
@@ -134,6 +134,6 @@
         // return false is needed for most events - this will be reviewed in upcoming course material
         // THE LINE DIRECTLY BELOW IS CORRECT
 		return false;
-	;
+	}; //Missing end curly brace for document.forms function
 
 })();
