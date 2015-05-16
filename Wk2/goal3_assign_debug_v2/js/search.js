@@ -19,19 +19,19 @@
 	var validqte = function(query){
 		
 		// Trim whitespace from start and end of search query
-		while(query.charAt(0) = " "){
-			query = query.substring(1, query.length);
+		while(validqte.charAt(0) = " "){
+			query = validqte.substring(1, validqte.length);
 		}; 
 		//beginning parenthesis is missing 
-		while(query.charAt(query.length-1) === ""){
-			query = query.substring(0, query.length-1);
+		while(validqte.charAt(validqte.length-1) === ""){
+			query = validqte.substring(0, validqte.length-1);
 		//No closing bracket for while loop here 
 		};
 	}; //Missing close bracket for validqte function
 		
 		// Check search length, must have 3 characters
 		//If the query to the search engine is less than 3, it will alert the user that what they entered is too short and to try again with a longer entry
-		if(query.length < 3){
+		if(validqte.length < 3){
 		//missing end quotes, added them in 
 		//alert the user that their search was not enough characters 
 			alert("Your search query is too small, try again.");
