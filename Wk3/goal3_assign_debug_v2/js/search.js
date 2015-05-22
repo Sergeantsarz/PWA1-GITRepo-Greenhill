@@ -18,20 +18,18 @@
 	var validqte = function(query){
 	console.log("3");
 		// Trim whitespace from start and end of search query
-		while(validqte.charAt(0) === " "){
-			validqte = validqte.substring(1, validqte.length);
+		while(query.charAt(0) == " "){
+			query = query.substring(1, query.length);
 		}; 
 		//beginning parenthesis is missing 
-		while(validqte.charAt(validqte.length) === ""){
-			validqte = validqte.substring(1, validqte.length-1);
+		while(query.charAt(query.length-1) === ""){
+			query = query.substring(0, query.length-1);
 		//No closing bracket for while loop here 
 		};
-
-	}; //Missing close bracket for validqte function
 		
 		// Check search length, must have 3 characters
 		//If the query to the search engine is less than 3, it will alert the user that what they entered is too short and to try again with a longer entry
-		if(validqte.length < 3){
+		if(query.length < 3){
 		console.log("4");
 		//missing end quotes, added them in 
 		//alert the user that their search was not enough characters 
@@ -45,13 +43,14 @@
 		console.log("5");
 		//if the length of the query is sufficient, then search for the term entered by the user 
 		search(query);
-	
+	};
 	
 		// Finds matches when the user searches for something
 		var search = function(query){
 		console.log("6");
 		// split the user's search query string into an array
-		var queryArray = search.join(" ");
+		//changed the word join to split 
+		var queryArray = search.split(" ");
 		
 		// array to store matched results from database.js
 		var results = [];
