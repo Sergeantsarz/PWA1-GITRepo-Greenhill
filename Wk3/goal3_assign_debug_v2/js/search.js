@@ -61,12 +61,12 @@
 			// each db[i] is a single video item, each title ends with a pipe "|"
 			var dbTitleEnd = db[i].indexOf('|');
 			// save a lowercase variable of the video title by switching anything the user enters and sending it to all lower case
-			var dbitem = db[i].tolowercase().substring(0, dbTitleEnd);
+			var dbitem = db[i].toLowerCase().substring(0, dbTitleEnd);
 			
 			// loop through the user's search query words
 			for(var ii=0, jj=queryArray.length; ii<jj; ii++){
 			// save a lowercase variable of the search keyword
-				var qitem = queryArray[ii].tolowercase();
+				var qitem = queryArray[ii].toLowerCase();
 				
 				// is the keyword anywhere in the video title?
 				// If a match is found, push full db[i] into results array
