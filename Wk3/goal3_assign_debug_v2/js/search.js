@@ -40,17 +40,16 @@
 			//return the results of the search 
 			return;
 		};
-		console.log("5");
 		//if the length of the query is sufficient, then search for the term entered by the user 
 		search(query);
 	};
-	
+	console.log("5");
 		// Finds matches when the user searches for something
 		var search = function(query){
 		console.log("6");
 		// split the user's search query string into an array
 		//changed the word join to split 
-		var queryArray = search.split(" ");
+		var queryArray = query.split(" ");
 		
 		// array to store matched results from database.js
 		var results = [];
@@ -61,18 +60,21 @@
 			// each db[i] is a single video item, each title ends with a pipe "|"
 			var dbTitleEnd = db[i].indexOf('|');
 			// save a lowercase variable of the video title by switching anything the user enters and sending it to all lower case
+			//toLowerCase was not camel cased 
 			var dbitem = db[i].toLowerCase().substring(0, dbTitleEnd);
 			
 			// loop through the user's search query words
 			for(var ii=0, jj=queryArray.length; ii<jj; ii++){
 			// save a lowercase variable of the search keyword
+			//toLowerCase was not camel cased
 				var qitem = queryArray[ii].toLowerCase();
 				
 				// is the keyword anywhere in the video title?
 				// If a match is found, push full db[i] into results array
 				//The results array will now contain anything that querys a result based upon what the user has entered into the search 
 				var compare = dbitem.indexOf(qitem);
-				if(compare !== -1){
+				//changed !== to !=
+				if(compare != -1){
 					results.push(db[i]);
 				}; //Missing end curly brace for search function
 			}; //Missing end curly brace for db array loop
@@ -82,7 +84,8 @@
 		
 		// Check that matches were found, and run output functions
 		//if the results =  0 then let the user know there was no match by initalizing the noMatch function, else show the user what matched their query and output those matches to the results variable 
-		if(results.length = 0){
+		//changed = to == 
+		if(results.length == 0){
 			noMatch();
 		}else{
 			showMatches(results);
@@ -114,7 +117,8 @@
 			// title of video ends with pipe
 			// pull the title's string using index numbers
 			titleEnd = results[i].indexOf('|');
-			title = results[i].subString(0, titleEnd);
+			//substring had camel casing 
+			title = results[i].substring(0, titleEnd);
 			
 			// pull the video url after the title
 			url = results[i].substring(results[i].indexOf('|')+1, results[i].length);
