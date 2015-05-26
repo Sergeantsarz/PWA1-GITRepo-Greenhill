@@ -24,14 +24,28 @@
 		health: 100,
 		
 	};
+	//This variable shows what round we're in
+	var round = 0;
 	
 	//This is where each piece of the DOM is defined 
 	//This delcares the variables for the fighters and finds the HTML by using their #ID 
-		var fighterOne_txt = document.querySelector("#kabal".querySelector("p");
-		var fighterTwo_txt = document.querySelector("#kratos".querySelector("p");
+		var fighterOne_txt = document.querySelector("#kabal").querySelector("p");
+		var fighterTwo_txt = document.querySelector("#kratos").querySelector("p");
+		
+	//This delcares the variable to access HTML and replace the H2 tag 
+	var round_txt = document.querySelector("h2"); 
 	
-		//This variable shows what round we're in
-	var round = 0;
+	//This delcares the variable to access the HTML for the fight button by accessing its ID 
+	var button = document.getElementById("fight_btn");	
+	
+	//This makes the event to watch for when the user clicks the round button
+	button.addEventListener("click", fight, false);
+	
+	//Uses the DOM using .innerHTML method for the stuff at the top of the game page 
+	round_txt.innerHTML = "Click The Fight Button to Start!";
+	
+	//This calls the Spiderman object for its health and name 
+	fighterOne_txt.innerHTML = spiderman[0].name + ": " + spiderman[0].health;
 	
 	//This is the fight function, I stands for Initialize (as in initialize the function)
 	function fight(){
