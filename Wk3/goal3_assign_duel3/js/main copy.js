@@ -44,8 +44,11 @@
 	//Uses the DOM using .innerHTML method for the stuff at the top of the game page 
 	round_txt.innerHTML = "Click The Fight Button to Start!";
 	
-	//This calls the Spiderman object for its health and name 
-	fighterOne_txt.innerHTML = spiderman[0].name + ": " + spiderman[0].health;
+	//This calls the Kabal object for its health and name 
+	fighterOne_txt.innerHTML = Kabal[0].name + ": " + Kabal[0].health;
+	
+	//This calls the Kratos object for its health and name 
+	fighterOne_txt.innerHTML = Kratos[0].name + ": " + Kratos[0].health;
 	
 	//This is the fight function, I stands for Initialize (as in initialize the function)
 	function fight(){
