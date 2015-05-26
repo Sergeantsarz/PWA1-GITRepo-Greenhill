@@ -4,7 +4,7 @@
      Class & Section: PWA1
      Comments: Week 3 Homework Duel3 
  */
- 
+(function(){
  	//This prints fight to the console
 	console.log("Fight!");
 	
@@ -29,11 +29,11 @@
 	
 	//This is where each piece of the DOM is defined 
 	//This delcares the variables for the fighters and finds the HTML by using their #ID 
-		var fighterOne_txt = document.querySelector("#kabal").querySelector("p");
-		var fighterTwo_txt = document.querySelector("#kratos").querySelector("p");
+		var fighterOne_txt = document.querySelector("kabal").querySelector("p");
+		var fighterTwo_txt = document.querySelector("kratos").querySelector("p");
 		
 	//This delcares the variable to access HTML and replace the H2 tag 
-	var round_txt = document.querySelector("h2"); 
+	var round_txt = document.querySelector("round_number"); 
 	
 	//This delcares the variable to access the HTML for the fight button by accessing its ID 
 	var button = document.getElementById("fight_btn");	
@@ -96,6 +96,5 @@
 	//This calls the fight function into action - everything starts here 
 	console.log("Program Starts Here!");
 	fight();
-	
 })();
  
