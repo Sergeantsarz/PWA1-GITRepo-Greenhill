@@ -44,48 +44,31 @@
 	//Uses the DOM using .innerHTML method for the stuff at the top of the game page 
 	round_txt.innerHTML = "Click The Fight Button to Start!";
 	
-	//This calls the Kabal object for its health and name 
-	fighterOne_txt.innerHTML = Kabal[0].name + ": " + Kabal[0].health;
 	
-	//This calls the Kratos object for its health and name 
-	fighterOne_txt.innerHTML = Kratos[0].name + ": " + Kratos[0].health;
 	
 	//This is the fight function, I stands for Initialize (as in initialize the function)
 	function fight(){
 		//Inside the fight function
 		console.log("Fight Function Starts Here!");
-		//This displays an alert to the user showing the player's names, current health, and that the round has started
-		alert(playerOneArr[0] + ": " + playerOneArr[2] + " *START* " + playerTwoArr[0] + ": " + playerTwoArr[2]);
+					if(results === "No Winner!"){
+					
+		//This calls the Kabal object for its health and name 
+		fighterOne_txt.innerHTML = Kabal[0].name + ": " + Kabal[0].health;
+	
+		//This calls the Kratos object for its health and name 
+		fighterTwo_txt.innerHTML = Kratos[0].name + ": " + Kratos[0].health;
+		}else{
+		fighterOne_txt.innerHTML = results;
+		fighterTwo_txt.innerHTML = "";
 		
-		for (var i=0; i<10; i++){
-			//Formula for random generated number: Math.floor(Math.random() * (max - min) + min); These are variables set up to contain the math done to determine the random amount of damage that each player does
-			var minDamage1 = playerOneArr[1] * .5; //This is the minimum amount of damage player 1 dishes out
-			var minDamage2 = playerTwoArr[1] * .5; //This is the minimum amount of damage player 2 dishes out 
-			
-			var f1 = Math.floor(Math.random() * (playerOneArr[1] - minDamage1) + minDamage1); //Random math formula calculating dmg for player 1 
-			var f2 = Math.floor(Math.random() * (playerTwoArr[1] - minDamage2) + minDamage2); //Random math formula calculating dmg for player 2
-			
-			//This is where damage is done by each player
-			playerOneArr[2] -= f1;
-			playerTwoArr[2] -= f2;
-			//This logs to the console the current health of each player
-			console.log(playerOneArr[0] + ": " + playerOneArr[2] + playerTwoArr[0] + ": " + playerTwoArr[2]);
-			
-			var results = winnerCheck(); //This calls the winnerCheck function where it will check to see if a player has bested the other, or if both have died 
-			console.log(results); //Logs the variable 'results' to the console showing who's been killed and/or what their health is 
-			
-			//This if-else states that if there's no winner, move on to the next round, add 1 to the round total, then alert the user of the player's current health totals and round number. If someone has won, alert the user who won or if both players have died 
-			if(results === "No Winner!"){
-				
-				round++;
-				alert(playerOneArr[0] + ": " + playerOneArr[2] + " *ROUND " + round + " OVER* " + playerTwoArr[0] + ": " + playerTwoArr[2]);
-			}else{
-				alert(results);
-				break;
-			}; //End of the for loop
-		}; //End of the if-else statement
+		//This disables the button so it stops being clickable
+		button.removeEventListener("click", fight, false);
 		
-	}; //End of the fight function
+		//This uses querySelector to find the button
+		document.querySelector(".buttonblue").innerHTML = "Finished!";
+		
+		}//End of else 
+	};//End of the fight function
 	
 	//This function checks who the winner is 
 	function winnerCheck(){
@@ -93,17 +76,17 @@
 		//Inside the winner check function
 		var result = "No Winner!"; //Default state of 'result' variable is that ther is no winner
 		//If either player's health has gone lower than 1, result variable will return that both players have died to the result variable, which will alert the user
-		if(playerOneArr[2] < 1 && playerTwoArr[2] < 1){
+		if(kabal[0].health < 1 && kratos[0].health < 1){
 			
 			result = "You Both Die.";
 			
-		}else if(playerOneArr[2] < 1){
+		}else if(kratos[0].health < 1){
 			
-			result = playerTwoArr[0] + " Wins!"
+			result = kratos[0].health + " Wins!"
 			
-		}else if(playerTwoArr[2] < 1){
+		}else if(kratos[0].health < 1){
 			
-			result = playerOneArr[0] + " Wins!"
+			result = kabal[0].health + " Wins!"
 			
 		}; //Ends the if-else for winnerCheck 
 		
