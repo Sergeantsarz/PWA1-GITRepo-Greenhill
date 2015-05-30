@@ -29,7 +29,7 @@ create a interval that does a runUpdate(); function 30 times every second
 
 after people array is populated, loop through the people until all people are gone through and  excecute the update(); function 
 
-end program
+end program by outputing the persons name and job with HTML in the web page 
 
 
 
