@@ -11,9 +11,9 @@ make an array called var names that contains 5 people = [person1, person2, perso
 use a for loop to create three objects in an array(param1, param2, param3){
 create an array called  var people with three objects inside = [
 
-create var personObject1 = {};
-create var personObject2 = {};
-create var personObject3 = {};
+create var personObject1 = {personJob1: info};
+create var personObject2 = {personJob2: info};
+create var personObject3 = {personJob3: info};
 
 ];
 };
